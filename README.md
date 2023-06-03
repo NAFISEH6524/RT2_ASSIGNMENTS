@@ -16,4 +16,4 @@ The goal of assignment 2 is create a visual interface for communicating with ROS
 Assignment 3
 ----------------------
 The goal of assignment 3 is using the statistical analysis for evaluating the performance of tho algorithms.
-![Alt text](image link)
+![Alt text](https://github.com/NAFISEH6524/RT2_ASSIGNMENTS/blob/main/images/Picture1.png)
