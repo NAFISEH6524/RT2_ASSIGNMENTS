@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Simulator’s Documentation! &mdash; Simulator 1.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            Simulator
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to Simulator’s Documentation!</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+<li><a class="reference internal" href="#module-scripts.set_goal">Set Goal Node</a></li>
+<li><a class="reference internal" href="#module-scripts.monitoring">Monitoring Node</a></li>
+<li><a class="reference internal" href="#module-scripts.odometer">Odometer Node</a></li>
+<li><a class="reference internal" href="#module-scripts.summary">Summary Node</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Simulator</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Welcome to Simulator’s Documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-simulator-s-documentation">
+<h1>Welcome to Simulator’s Documentation!<a class="headerlink" href="#welcome-to-simulator-s-documentation" title="Permalink to this headline"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+<section id="module-scripts.set_goal">
+<span id="set-goal-node"></span><h1>Set Goal Node<a class="headerlink" href="#module-scripts.set_goal" title="Permalink to this headline"></a></h1>
+<span class="target" id="module-set_goal"></span><dl class="field-list simple">
+<dt class="field-odd">platform</dt>
+<dd class="field-odd"><p>Unix</p>
+</dd>
+<dt class="field-even">synopsis</dt>
+<dd class="field-even"><p>Python module to show an interface to the user</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.set_goal.createClient">
+<span class="sig-prename descclassname"><span class="pre">scripts.set_goal.</span></span><span class="sig-name descname"><span class="pre">createClient</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/set_goal.html#createClient"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.set_goal.createClient" title="Permalink to this definition"></a></dt>
+<dd><dl>
+<dt>Description:</dt><dd><p>Creates an action-client to connect to the ‘/reaching_goal’ server.</p>
+</dd>
+<dt>Message Type:</dt><dd><dl>
+<dt>PlanningAction</dt><dd><p>geometry_msgs/PoseStamped target_pose</p>
+<p>—</p>
+<p>—</p>
+<p>geometry_msgs/Pose actual_pose
+string stat</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>None.</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.set_goal.showMenu">
+<span class="sig-prename descclassname"><span class="pre">scripts.set_goal.</span></span><span class="sig-name descname"><span class="pre">showMenu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/set_goal.html#showMenu"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.set_goal.showMenu" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><p>Shows an operation-select menu to the user.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>None.</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.set_goal.showWelcome">
+<span class="sig-prename descclassname"><span class="pre">scripts.set_goal.</span></span><span class="sig-name descname"><span class="pre">showWelcome</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/set_goal.html#showWelcome"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.set_goal.showWelcome" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><p>It shows a welcome message to the user.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>None.</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-scripts.monitoring">
+<span id="monitoring-node"></span><h1>Monitoring Node<a class="headerlink" href="#module-scripts.monitoring" title="Permalink to this headline"></a></h1>
+<span class="target" id="module-monitoring"></span><dl class="field-list simple">
+<dt class="field-odd">platform</dt>
+<dd class="field-odd"><p>Unix</p>
+</dd>
+<dt class="field-even">synopsis</dt>
+<dd class="field-even"><p>Python module for monitoring the data.</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.monitoring.movingAverage">
+<span class="sig-prename descclassname"><span class="pre">scripts.monitoring.</span></span><span class="sig-name descname"><span class="pre">movingAverage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">vx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vy</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/monitoring.html#movingAverage"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.monitoring.movingAverage" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><p>It computes the moving average of the velocity data.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vx</strong> – Current velocity in the x direction</p></li>
+<li><p><strong>vy</strong> – Current veloity in the y direction</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.monitoring.updateKinematicInfo">
+<span class="sig-prename descclassname"><span class="pre">scripts.monitoring.</span></span><span class="sig-name descname"><span class="pre">updateKinematicInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">odoMsg</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/monitoring.html#updateKinematicInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.monitoring.updateKinematicInfo" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><p>It compute the ‘distance to the target’ and ‘average speed’ of the robot.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>odoMsg</strong> – A message of type ‘OdoSensor’</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-scripts.odometer">
+<span id="odometer-node"></span><h1>Odometer Node<a class="headerlink" href="#module-scripts.odometer" title="Permalink to this headline"></a></h1>
+<span class="target" id="module-odometer"></span><dl class="field-list simple">
+<dt class="field-odd">platform</dt>
+<dd class="field-odd"><p>Unix</p>
+</dd>
+<dt class="field-even">synopsis</dt>
+<dd class="field-even"><p>Python module for manipulating the odometry data.</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.odometer.setOdoMessage">
+<span class="sig-prename descclassname"><span class="pre">scripts.odometer.</span></span><span class="sig-name descname"><span class="pre">setOdoMessage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/odometer.html#setOdoMessage"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.odometer.setOdoMessage" title="Permalink to this definition"></a></dt>
+<dd><dl>
+<dt>Description:</dt><dd><p>It is the ‘odoMessageSubscriber’ handler.</p>
+</dd>
+<dt>Message Type:</dt><dd><dl>
+<dt>Odometry</dt><dd><dl>
+<dt>pose:</dt><dd><dl>
+<dt>pose:</dt><dd><dl>
+<dt>position:</dt><dd><p>x</p>
+<p>y</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>twist:</dt><dd><dl>
+<dt>twist:</dt><dd><dl>
+<dt>linear:</dt><dd><p>x</p>
+<p>y</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>msg</strong> – The odometry data published on the ‘/odom’ topic.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-scripts.summary">
+<span id="summary-node"></span><h1>Summary Node<a class="headerlink" href="#module-scripts.summary" title="Permalink to this headline"></a></h1>
+<span class="target" id="module-summary"></span><dl class="field-list simple">
+<dt class="field-odd">platform</dt>
+<dd class="field-odd"><p>Unix</p>
+</dd>
+<dt class="field-even">synopsis</dt>
+<dd class="field-even"><p>Python module for monitoring the goals status.</p>
+</dd>
+</dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.summary.sendGoalSummary">
+<span class="sig-prename descclassname"><span class="pre">scripts.summary.</span></span><span class="sig-name descname"><span class="pre">sendGoalSummary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">res</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/summary.html#sendGoalSummary"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.summary.sendGoalSummary" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><p>Sends response to the ‘goalSummary’ request.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>msg</strong> – A message of type ‘PlanningActionFeedback’</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scripts.summary.updateGoalSummary">
+<span class="sig-prename descclassname"><span class="pre">scripts.summary.</span></span><span class="sig-name descname"><span class="pre">updateGoalSummary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/scripts/summary.html#updateGoalSummary"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#scripts.summary.updateGoalSummary" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><p>It counts the number of reached or cancelled goals.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>msg</strong> – A message of type ‘PlanningActionFeedback’.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Nafiseh Monavari (S5174160).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
