@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find robot_sim)/launch/assignment1.launch" />
+    <param name="print_rate" value= "1" />
+</launch>
